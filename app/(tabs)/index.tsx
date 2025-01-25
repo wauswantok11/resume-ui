@@ -1,12 +1,9 @@
-import { StyleSheet } from 'react-native';
-
- import { Text, View } from '@/components/Themed';
-import MainResume from '@/components/MainResume';
+import { StyleSheet } from "react-native";
+import { Text, View } from "@/components/Themed";
+import MainResume from "@/components/MainResume";
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>อดุล วสุวรรธก</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <MainResume path="app/(tabs)/index.tsx" />
     </View>
   );
@@ -15,16 +12,9 @@ export default function TabOneScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
+    backgroundColor: "rgb(204, 221, 249 )",
+    display: "flex",
+    margin: 0,
+    padding: 0,
   },
 });

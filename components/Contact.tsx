@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 
-import { ExternalLink } from './ExternalLink';
+// import { ExternalLink } from './ExternalLink';
 import { MonoText } from './StyledText';
 import { Text, View } from './Themed';
 
@@ -17,7 +17,6 @@ export default function ContactInfo({ path }: { path: string }) {
           darkColor="rgba(255,255,255,0.8)">
           Tel : 092-4994561
         </Text>
-        
       </View>
       <View style={styles.getStartedContainer}>
         <Text
@@ -25,13 +24,7 @@ export default function ContactInfo({ path }: { path: string }) {
           lightColor="rgba(0,0,0,0.8)"
           darkColor="rgba(255,255,255,0.8)">
           Email : adul.vasuvantok@gmail.com
-        </Text>
-        <ExternalLink 
-          href="https://docs.expo.io/get-started/create-a-new-app/#opening-the-app-on-your-phonetablet">
-          <Text lightColor={Colors.light.tint}>
-            Tap here if your app doesn't automatically update after making changes
-          </Text>
-        </ExternalLink>
+        </Text> 
       </View>
     </View>
   );
